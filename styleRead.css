@@ -840,7 +840,7 @@ body {
         height: 100%;
         z-index: 1;
         object-fit: contain;
-        
+        padding-bottom: 20px;
         
     }
     .container_read-svg-abs {
