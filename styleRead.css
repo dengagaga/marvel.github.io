@@ -833,8 +833,7 @@ body {
     }
     .swiper-slide {
         display: flex!important;
-        align-items:center!important ;
-        
+        align-items:center!important;
     }
     .swiper-slide img {
         position: relative;
@@ -873,7 +872,7 @@ body {
     }
     .header_read {
         justify-content: space-between;
-        margin-bottom: 90px;
+        
     }
     .header_read-mid {
         position: absolute;
@@ -906,7 +905,7 @@ body {
 @media(max-width:390px) {
     .header_read {
         justify-content: space-between;
-        margin-bottom: 70px;
+        
     }
     .header_read-mid {
         position: absolute;
@@ -918,7 +917,7 @@ body {
     }
     .swiper-slide {
         display: flex!important;
-        align-items:center!important ;
+        align-items:start!important ;
         
     }
     .swiper-slide img {
