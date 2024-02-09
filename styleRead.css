@@ -750,10 +750,10 @@ body {
     }
     .swiper-slide img {
         position: relative;
-        height: 95vh;
+        height: 100vh;
         z-index: 1;
         object-fit: contain;
-        padding-top: 90px;
+        padding-top: 80px;
         padding-bottom: 30px;
     }
     .header_read  {
