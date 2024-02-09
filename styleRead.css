@@ -753,7 +753,8 @@ body {
         position: relative;
         height: 100vh;
         z-index: 1;
-        object-fit: contain;
+        object-fit: cover;
+
         top: 0;
         
     }
@@ -835,7 +836,10 @@ body {
         position: relative;
         height: 100vh;
         z-index: 1;
-        object-fit: contain;
+        object-fit: cover;
+        padding-left: 2px;
+        padding-right: 2px;
+
         
         
     }
@@ -868,6 +872,7 @@ body {
     }
     .header_read {
         justify-content: space-between;
+        margin-bottom: 70px;
     }
     .header_read-mid {
         position: absolute;
@@ -900,7 +905,7 @@ body {
 @media(max-width:390px) {
     .header_read {
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
     }
     .header_read-mid {
         position: absolute;
@@ -914,7 +919,8 @@ body {
         position: relative;
         height: 100vh;
         z-index: 1;
-        object-fit: contain;
+        object-fit: cover;
+
         
 
     }
