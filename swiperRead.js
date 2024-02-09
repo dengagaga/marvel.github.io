@@ -89,3 +89,13 @@ swiperButtNext.addEventListener('click', () => {
     document.location.href = "ReadTwo.html"
   }
 })
+
+
+
+const sw2 = document.querySelector('.sw2')
+
+sw2.addEventListener('click', () => {
+  swipers.classList.remove('none')
+  containerRead2.classList.add('none')
+  
+})

@@ -200,7 +200,8 @@ body {
     padding: 22px 13px 0px;
 }
 .header_nav-bot {
-    
+    gap: 9px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +224,16 @@ body {
 .header_mid-text-two {
     padding-top: 24px;
     color:#fff ;
+    cursor: pointer;
 }
+.header_mid-text-two a:hover {
+    opacity: .8;
+}
+.header_mid-text-two a{
+    padding-top: 24px;
+    color:#fff ;
+}
+
 .title-1{
     padding-top: 24px;
     font-size: 26px;
@@ -664,9 +674,7 @@ b {
     width: 100%;
     font-weight: 500;
 }
-.posl {
-    
-}
+
 .series_all-item-last {
     color: var(--title-color);
     font-family: "DIN Pro";
@@ -685,6 +693,9 @@ b {
     gap: 32px;
 }
 /* ______/MAIN______ */
+.span-active {
+    color: var(--gray-color);
+}
 .span-active:hover {
     color: var(--main-color);
     cursor: pointer;
@@ -1150,16 +1161,20 @@ b {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin-top: 40px;
 }
 
 .item-shadow img {
     box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.45);
+
+}
+.item-shadow {
     transition: .3s;
 }
-.item-shadow img:hover {
+.item-shadow:hover {
     transform: translateY(-10px);
     cursor: pointer;
-    
+    color: var(--blue-color);
 }
 .main-galery-bot {
     padding-top: 32px;
