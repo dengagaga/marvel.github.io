@@ -741,6 +741,7 @@ body {
     }
     .swiper-buttons {
         gap: 100px;
+        
     }
     .conatiner-all {
         height: auto;
@@ -753,7 +754,8 @@ body {
         height: 100vh;
         z-index: 1;
         object-fit: contain;
-        padding-top: 30px;
+        top: 0;
+        
     }
     .header_read  {
         padding-left: 10px;
@@ -834,7 +836,7 @@ body {
         height: 100vh;
         z-index: 1;
         object-fit: contain;
-        padding-top: 120px;
+        
         
     }
     .container_read-svg-abs {
@@ -913,7 +915,8 @@ body {
         height: 100vh;
         z-index: 1;
         object-fit: contain;
-        padding-top: 60px;
+        
+
     }
     .read_list {
 
