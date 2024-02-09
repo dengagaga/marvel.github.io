@@ -753,8 +753,7 @@ body {
         position: relative;
         height: 100vh;
         z-index: 1;
-        object-fit: cover;
-
+        object-fit: contain;
         top: 0;
         
     }
@@ -836,10 +835,8 @@ body {
         position: relative;
         height: 100vh;
         z-index: 1;
-        object-fit: cover;
-        padding-left: 2px;
-        padding-right: 2px;
-
+        object-fit: contain;
+        height: auto;
         
         
     }
@@ -872,7 +869,7 @@ body {
     }
     .header_read {
         justify-content: space-between;
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
     .header_read-mid {
         position: absolute;
@@ -917,7 +914,7 @@ body {
     }
     .swiper-slide img {
         position: relative;
-        height: 100vh;
+        height: auto;
         z-index: 1;
         object-fit: cover;
 
