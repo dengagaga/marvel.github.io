@@ -925,7 +925,7 @@ body {
         position: relative;
         height: 100%;
         z-index: 1;
-        object-fit: cover;
+        object-fit: contain;
 
         
 
