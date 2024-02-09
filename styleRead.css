@@ -751,7 +751,7 @@ body {
     }
     .swiper-slide img {
         position: relative;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
         object-fit: contain;
         top: 0;
@@ -838,10 +838,9 @@ body {
     }
     .swiper-slide img {
         position: relative;
-        height: 100vh;
+        height: 100%;
         z-index: 1;
         object-fit: contain;
-        height: auto;
         
         
     }
@@ -924,7 +923,7 @@ body {
     }
     .swiper-slide img {
         position: relative;
-        height: auto;
+        height: 100%;
         z-index: 1;
         object-fit: cover;
 
