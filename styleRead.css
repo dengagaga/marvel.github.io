@@ -270,7 +270,6 @@ body {
     align-items: center;
     height: 100vh;
     position: relative;
-    
 }
 .read-text_abs-2 {
     position: absolute;
@@ -325,9 +324,8 @@ body {
     background: #111111a2;
     z-index: 20;
     position: absolute;
-    top: 100%;
+    bottom: 0;
     justify-content: center;
-    transform: translateY(-90%);
     padding-bottom: 20px;
     padding-top: 13px;
 
@@ -667,6 +665,29 @@ body {
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
+    transition: .3s;
+}
+.modal_box-top-img-item svg rect{
+    transition: .3s;
+
+}
+.modal_box-top-img-item:nth-child(2):hover svg rect{
+    stroke: var(--blue-color);
+}
+.modal_box-top-img-item:nth-child(2):hover {
+    color: var(--blue-color);
+}
+.modal_box-top-img-item:nth-child(3):hover svg rect{
+    stroke: var(--blue-color);
+}
+.modal_box-top-img-item:nth-child(3):hover svg rect:nth-child(1){
+    fill: var(--blue-color);
+}
+.modal_box-top-img-item:nth-child(3):hover svg rect:last-child{
+    fill: var(--blue-color);
+}
+.modal_box-top-img-item:nth-child(3):hover {
+    color: var(--blue-color);
 }
 .modal_box-top-img-item--active svg rect:nth-child(2),.modal_box-top-img-item--active svg rect:nth-child(3), .modal_box-top-img-item--active svg rect:nth-child(4),.modal_box-top-img-item--active svg rect:nth-child(5){
     stroke: #FFFFFF;  
@@ -691,10 +712,25 @@ body {
     font-weight: 500;
     color: white;
 }
+#fullpage {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'DIN Pro';
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
 .modal_box-bot-link:hover {
     color: var(--blue-color);
 }
 .modal_box-bot-link:hover svg path{
+    fill: var(--blue-color);
+}
+#fullpage:hover {
+    color: var(--blue-color);
+}
+#fullpage:hover svg path{
     fill: var(--blue-color);
 }
 /* ______/MODAL______ */
@@ -763,8 +799,8 @@ body {
     }
     .container_read-svg-abs {
        top: auto;
-       bottom: 23px;
-       left: 60%;
+       bottom: 32px;
+       left: 59%;
        transform: translateX(-50%);
        width: 34px;
        height: 34px;
@@ -845,7 +881,7 @@ body {
     }
     .container_read-svg-abs {
         top: auto;
-        bottom: 23px;
+        bottom: 32px;
         left: 66%;
         transform: translateX(-50%);
         width: 34px;
@@ -900,6 +936,26 @@ body {
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 20px;
+    }
+    .modal {
+
+    }
+    .modal.open {
+        
+    }
+    .modal_box {
+        bottom: -450px;
+        transform: scale(1);
+        position: absolute;
+        padding: 50px 30px 
+    }
+    .modal.open .modal_box {
+        bottom: -10px;
+        transform: scale(1);
+    }
+    .modal_box-top-img-all {
+        gap: 15px;
+        justify-content: center;
     }
 }
 @media(max-width:390px) {

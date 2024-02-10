@@ -91,11 +91,156 @@ swiperButtNext.addEventListener('click', () => {
 })
 
 
-
+// Переключение на слайды
+const sw1 = document.querySelector('.sw1')
 const sw2 = document.querySelector('.sw2')
+const sw3 = document.querySelector('.sw3')
+const sw4 = document.querySelector('.sw4')
+const sw5 = document.querySelector('.sw5')
+const sw6 = document.querySelector('.sw6')
+const swiperButtons = document.querySelector('.swiper-buttons')
 
+sw1.addEventListener('click', () => {
+  swipers.classList.remove('none')
+  containerRead2.classList.add('none')
+  // swiperSlideImg.forEach(img => {
+  //   img.style.top = '0'
+  //   swiperButtons.style.bottom = '-51px'
+  // })
+})
 sw2.addEventListener('click', () => {
   swipers.classList.remove('none')
   containerRead2.classList.add('none')
+  // swiperSlideImg.forEach(img => {
+  //   img.style.top = '0'
+  //   swiperButtons.style.bottom = '-51px'
+  // })
+})
+sw3.addEventListener('click', () => {
+  swipers.classList.remove('none')
+  containerRead2.classList.add('none')
+  // swiperSlideImg.forEach(img => {
+  //   img.style.top = '0'
+  //   swiperButtons.style.bottom = '-51px'
+  // })
+})
+sw4.addEventListener('click', () => {
+  swipers.classList.remove('none')
+  containerRead2.classList.add('none')
+  // swiperSlideImg.forEach(img => {
+  //   img.style.top = '0'
+  //   swiperButtons.style.bottom = '-51px'
+    
+  // })
+})
+sw5.addEventListener('click', () => {
+  swipers.classList.remove('none')
+  containerRead2.classList.add('none')
+  // swiperSlideImg.forEach(img => {
+  //   img.style.top = '0'
+  //   swiperButtons.style.bottom = '-51px'
+    
+  // })
+})
+sw6.addEventListener('click', () => {
+  swipers.classList.remove('none')
+  containerRead2.classList.add('none')
+  // swiperSlideImg.forEach(img => {
+  //   img.style.top = '0'
+  //   swiperButtons.style.bottom = '-51px'
+    
+  // })
+})
+// /Переключение на слайды
+
+
+
+
+// F11
+
+var fullpage = document.getElementById("fullpage")
+console.dir(fullpage)
+
+fullpage.onclick = function(){   
+  if (fullpage.children[1].textContent == 'На весь экран') {
+    fullpage.children[1].innerHTML='Выйти из полноэкранного режима'  
+
+  } 
+  else if (fullpage.children[1].textContent == 'Выйти из полноэкранного режима') {
+    fullpage.children[1].innerHTML='На весь экран'  
+  }
+  if(fullpage.className == 'cur'){
+    fullpage.classList = ""
+    exitFullScreen()
+    
+  }else{
+    fullpage.classList = "cur"
+    fullScreen(document.documentElement)
+  }
+}
+
+function fullScreen(el) {
+  var rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen,
+  wscript;
+  
+  if (typeof rfs != "undefined" && rfs) {
+    rfs.call(el);
+    return;
+  }
+  
+  if (typeof window.ActiveXObject != "undefined") {
+    wscript = new ActiveXObject("WScript.Shell");
+    if (wscript) {
+      wscript.SendKeys("{F11}");
+    }
+  }
+}
+
+function exitFullScreen(el) {
+  var el = document,
+  cfs = el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen,
+  wscript;
+  
+  if (typeof cfs != "undefined" && cfs) {
+    cfs.call(el);
+    return;
+  }
+  
+  if (typeof window.ActiveXObject != "undefined") {
+    wscript = new ActiveXObject("WScript.Shell");
+    if (wscript != null) {
+      wscript.SendKeys("{F11}");
+    }
+  }
+}
+// /F11
+
+// Modal Переходы
+const swiperSlideImg = document.querySelectorAll('.swiper-slide_img')
+const swiperSlide = document.querySelectorAll('.swiper-slide')
+const modalBoxBotLink = document.getElementById('modal_box-bot-link')
+modalBoxBotLink.addEventListener('click', () => {
+  if (modalBoxBotLink.children[1].textContent == 'Использовать зум') {
+    swiperSlideImg.forEach(img => {
+      img.style.transform = "scale(1.4)"
+      modal.classList.remove('open')
+      containerReadSvg.classList.add('opacity')
+    })
+    swiperSlide.forEach(slide => {
+      slide.style.overflow='hidden'
+    })
+    modalBoxBotLink.children[1].textContent = 'Убрать зум'
+  } else {
+    swiperSlideImg.forEach(img => {
+      img.style.transform = "scale(1)"
+      modal.classList.remove('open')
+      containerReadSvg.classList.add('opacity')
+    })
+    swiperSlide.forEach(slide => {
+      slide.style.overflow='visible'
+    })
+    modalBoxBotLink.children[1].textContent = 'Использовать зум'
+  }
   
 })
+// /Modal Переходы

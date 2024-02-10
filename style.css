@@ -659,10 +659,11 @@ b {
 .main {
     padding: 8px 55px 32px 139px;
 }
+
 .series_all {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    justify-content: center;
+    gap: 45px;
 }
 .series_all-item {
     display: flex;
@@ -831,6 +832,13 @@ b {
 }
 /* ______/FOOTER______ */
 /* ______MEDIA______ */
+@media(max-width:1440px) {
+    .series_all {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+}
 @media(max-width:1170px) {
     .header_mid-top {
         flex-wrap: wrap;
