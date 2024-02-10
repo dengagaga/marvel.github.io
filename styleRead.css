@@ -142,6 +142,7 @@ body {
 .body_read {
     background-color: #111111;
     overflow-y: hidden;
+    height: 100dvh;
 }
 .container_read {
     max-width: 1280px;
@@ -876,7 +877,7 @@ body {
         height: 100%;
         z-index: 1;
         object-fit: contain;
-        padding-bottom: 20px;
+        /* padding-bottom: 20px; */
         
     }
     .container_read-svg-abs {
