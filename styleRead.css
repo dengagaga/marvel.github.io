@@ -828,7 +828,7 @@ body {
 }
 @media(max-width:500px) {
     .swiper-wrapper {
-        height: 95%;
+        height: 95%!important;
     }
     .read-text_abs-2 {
         position: absolute;
