@@ -111,8 +111,6 @@ legend {
 
 
 
-
-
 /* ______BASE______ */
 body {
     font-size: 14px;
@@ -168,15 +166,7 @@ body {
  .header_read-theOne {
     transition: .8s;
 }
-.swiper-scrollbar-theOne {
 
-    transition: .8s;
-}
-.swiper-buttons-theOne {
-
-    transition: .8s;
-
-}
 /*
 .header_read-theOne:hover {
     opacity: 1;
@@ -260,7 +250,7 @@ body {
 /* ______SWIPER______ */
 
 .swiper {
-    height: 100vh;
+    height: 100dvh;
 }
 .swiper-slide {
     text-align: center;
@@ -377,7 +367,13 @@ body {
     border-radius: 0px!important;
 
 }
+.swiper-scrollbar-theOne {
+    transition: .8s;
+}
+.swiper-buttons-theOne {
+    transition: .8s;
 
+}
 /* ______/SWIPER______ */
 
 
@@ -831,6 +827,9 @@ body {
     }
 }
 @media(max-width:500px) {
+    .swiper-wrapper {
+        height: 95%;
+    }
     .read-text_abs-2 {
         position: absolute;
         top: 35%;
